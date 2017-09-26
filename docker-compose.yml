@@ -1,0 +1,20 @@
+version: '3'
+services:
+  app:
+    image: app-container-exmaple:latest
+    volumes :
+      - app-data:/app
+  php:
+    image: 4alldigital/drudock-php:7.1
+    volumes :
+      - app-data:/app
+
+  nginx:
+    image: 4alldigital/drudock-nginx:latest
+    volumes :
+      - app-data:/app
+
+volumes:
+  app-data:
+    driver: local
+
