@@ -25,5 +25,5 @@ This can be run as a container or pushed to a remote registry. eg Docker Hub or 
 #### `ls` the /app/www directory of the generic nginx and php containers
     
     docker exec -i dockerappcontainer_php_1 ls /app/www 
-    docker exec -i dockerappcontainer_php_1 ls /app/www 
+    docker exec -i dockerappcontainer_nginx_1 ls /app/www 
     
